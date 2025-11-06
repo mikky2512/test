@@ -1,0 +1,32 @@
+.home-hero {
+  min-height: 80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  position:relative;
+  color: #00eaff;
+  text-align:center;
+}
+
+.home-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.55); /* dark overlay so text is visible */
+}
+
+.hero-inner{
+  position:relative;
+  z-index:1;
+  max-width:900px;
+  padding:30px;
+}
+
+.hero-inner h1{
+  font-size:42px;
+  margin:0 0 10px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+
+.hero-inner p{ color: #f0f0f0; opacity:0.9; }
